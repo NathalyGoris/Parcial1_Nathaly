@@ -50,43 +50,6 @@
         }
       },
       {
-        "HashCode": -265424656,
-        "Kind": "Components.Component",
-        "Name": "Parcial1.Pages.FetchData",
-        "AssemblyName": "Parcial1",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Parcial1.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "Parcial1.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 839226574,
-        "Kind": "Components.Component",
-        "Name": "Parcial1.Pages.FetchData",
-        "AssemblyName": "Parcial1",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Parcial1.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Parcial1.Pages.FetchData",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Common.TypeNamespace": "Parcial1.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 637812729,
         "Kind": "Components.Component",
         "Name": "Parcial1.Pages.Index",
@@ -19033,11 +18996,6 @@
       "FilePath": "c:\\Aplicada\\Parcial1\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Aplicada\\Parcial1\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Aplicada\\Parcial1\\App.razor",
