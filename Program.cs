@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Microsoft.EntityFrameworkCore.Sqlite;
+using Microsoft.EntityFrameworkCore;
+
 //using Parcial1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,7 @@ builder.Services.AddServerSideBlazor();
 
 var ConStr = builder.Configuration.GetConnectionString("ConStr");
 
-builder.Services.AddDbContext<Ingresos>(Options => Options.UseSqlite(ConStr));
+builder.Services.AddDbContext<Context>(Options => Options.UseSqlite(ConStr));
 
 
 var app = builder.Build();
