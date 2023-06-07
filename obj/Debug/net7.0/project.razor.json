@@ -87,6 +87,80 @@
         }
       },
       {
+        "HashCode": -108248698,
+        "Kind": "Components.Component",
+        "Name": "Parcial1.Pages.C_Ingresos",
+        "AssemblyName": "Parcial1",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "C_Ingresos"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Parcial1.Pages.C_Ingresos",
+          "Common.TypeNameIdentifier": "C_Ingresos",
+          "Common.TypeNamespace": "Parcial1.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 396182676,
+        "Kind": "Components.Component",
+        "Name": "Parcial1.Pages.C_Ingresos",
+        "AssemblyName": "Parcial1",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Parcial1.Pages.C_Ingresos"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Parcial1.Pages.C_Ingresos",
+          "Common.TypeNameIdentifier": "C_Ingresos",
+          "Common.TypeNamespace": "Parcial1.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1189854108,
+        "Kind": "Components.Component",
+        "Name": "Parcial1.Pages.R_Ingresos",
+        "AssemblyName": "Parcial1",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "R_Ingresos"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Parcial1.Pages.R_Ingresos",
+          "Common.TypeNameIdentifier": "R_Ingresos",
+          "Common.TypeNamespace": "Parcial1.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -294817106,
+        "Kind": "Components.Component",
+        "Name": "Parcial1.Pages.R_Ingresos",
+        "AssemblyName": "Parcial1",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Parcial1.Pages.R_Ingresos"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Parcial1.Pages.R_Ingresos",
+          "Common.TypeNameIdentifier": "R_Ingresos",
+          "Common.TypeNamespace": "Parcial1.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -279858420,
         "Kind": "Components.Component",
         "Name": "Parcial1.App",
@@ -19001,6 +19075,16 @@
       "FilePath": "c:\\Aplicada\\Parcial1\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Aplicada\\Parcial1\\Pages\\C_Ingresos.razor",
+      "TargetPath": "Pages\\C_Ingresos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Aplicada\\Parcial1\\Pages\\R_Ingresos.razor",
+      "TargetPath": "Pages\\R_Ingresos.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.3"

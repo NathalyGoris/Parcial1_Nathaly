@@ -24,8 +24,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Aplicada/Parcial1/Pages/C_Ingresos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ19JbmdyZXNvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Aplicada/Parcial1/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Aplicada/Parcial1/Pages/R_Ingresos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUl9JbmdyZXNvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Aplicada/Parcial1/Shared/SurveyPrompt.razor]
