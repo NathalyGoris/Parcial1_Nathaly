@@ -1,42 +1,47 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-public class IngresosBLL
-{
-private Context _context;
+public class IngresosBLL{
+    private Context _context;
 
     public IngresosBLL(Context context)
     {
         _context = context;
     }
+
     public bool Existe(int IngresoId)
     {
-        return _context.Ingresos.Any<Ingresos>(c => c.IngresoId == IngresoId);
+        return _context.Ingresos.Any(o => o.IngresoId == IngresoId);
     }
-    public bool Nuevo(Ingresos ingresos)
+
+    private bool Insertar(Ingresos 	Ingresos)
     {
-        return true;
+        _context.Ingresos.Add(Ingresos);
+        return _context.SaveChanges() > 0;
     }
-    public bool Validar(Ingresos ingresos)
+
+    private bool Modificar(Ingresos Ingresos)
     {
-        return true;
-    }
-    private bool Modificar(Ingresos IngresoId)
-    {
-        var existe = _context.Ingresos.Find(IngresoId.IngresoId);
-        
+        var existe = _context.Ingresos.Find(Ingresos.IngresoId);
+        if(existe != null)
+        {
+            _context.Entry(existe).CurrentValues.SetValues(Ingresos);
+            return _context.SaveChanges() > 0;
+        }
+
         return false;
     }
-    public bool Guardar(Ingresos IngresoId)
-    {
-         if(!Existe(IngresoId.IngresoId))
-            return false;
+
+    public bool Guardar(Ingresos Ingresos){
+        if(!Existe(Ingresos.IngresoId))
+            return this.Insertar(Ingresos);
         else
-            return this.Modificar(IngresoId);
+            return this.Modificar(Ingresos);
     }
-    public bool Eliminar(Ingresos IngresoId)
+
+    public bool Eliminar(int IngresosId)
     {
-        var eliminado = _context.Ingresos.Where(o=> o.IngresoId == IngresoId);
+        var eliminado  = _context.Ingresos.Where(o=> o.IngresoId== IngresosId).SingleOrDefault();
 
         if(eliminado!=null){
             _context.Entry(eliminado).State = EntityState.Deleted;
@@ -44,22 +49,14 @@ private Context _context;
         }
         return false;
     }
-    public bool Buscar(Ingresos ingresos)
+
+    public Ingresos? Buscar(int IngresoId)
     {
-        return false;
-    }
-    public bool Existe()
-    {
-      return false;  
+        return _context.Ingresos.Where(o => o.IngresoId == IngresoId).AsNoTracking().SingleOrDefault();
     }
 
-    public bool Modificar()
+    public List<Ingresos> GetList(Expression<Func<Ingresos, bool>> criterio)
     {
-      return false;  
-    }
-
-    public bool Insertar()
-    {
-      return false;  
-    }   
-}   
+        return _context.Ingresos.AsNoTracking().Where(criterio).ToList();
+    }     
+}
